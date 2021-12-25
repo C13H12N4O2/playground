@@ -1,0 +1,6 @@
+C:\Users\imeco\Desktop\Test\ResponseHeaderExam\ResponseHeaderExam\bin\Debug\ResponseHeaderExam.exe.config
+C:\Users\imeco\Desktop\Test\ResponseHeaderExam\ResponseHeaderExam\obj\Debug\ResponseHeaderExam.csprojResolveAssemblyReference.cache
+C:\Users\imeco\Desktop\Test\ResponseHeaderExam\ResponseHeaderExam\bin\Debug\ResponseHeaderExam.exe
+C:\Users\imeco\Desktop\Test\ResponseHeaderExam\ResponseHeaderExam\bin\Debug\ResponseHeaderExam.pdb
+C:\Users\imeco\Desktop\Test\ResponseHeaderExam\ResponseHeaderExam\obj\Debug\ResponseHeaderExam.exe
+C:\Users\imeco\Desktop\Test\ResponseHeaderExam\ResponseHeaderExam\obj\Debug\ResponseHeaderExam.pdb

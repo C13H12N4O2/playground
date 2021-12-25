@@ -1,0 +1,11 @@
+C:\Users\imeco\Desktop\Test\UdpClientExam\UdpClientExam\bin\Debug\UdpClientExam.exe.config
+C:\Users\imeco\Desktop\Test\UdpClientExam\UdpClientExam\bin\Debug\UdpClientExam.exe
+C:\Users\imeco\Desktop\Test\UdpClientExam\UdpClientExam\bin\Debug\UdpClientExam.pdb
+C:\Users\imeco\Desktop\Test\UdpClientExam\UdpClientExam\obj\Debug\UdpClientExam.exe
+C:\Users\imeco\Desktop\Test\UdpClientExam\UdpClientExam\obj\Debug\UdpClientExam.pdb
+C:\Users\imeco\Documents\Github\C_Sharp_Programming_Bible\UdpServerClientExam\UdpClientExam\UdpClientExam\bin\Debug\UdpClientExam.exe.config
+C:\Users\imeco\Documents\Github\C_Sharp_Programming_Bible\UdpServerClientExam\UdpClientExam\UdpClientExam\obj\Debug\UdpClientExam.exe
+C:\Users\imeco\Documents\Github\C_Sharp_Programming_Bible\UdpServerClientExam\UdpClientExam\UdpClientExam\obj\Debug\UdpClientExam.pdb
+C:\Users\imeco\Documents\Github\C_Sharp_Programming_Bible\UdpServerClientExam\UdpClientExam\UdpClientExam\bin\Debug\UdpClientExam.exe
+C:\Users\imeco\Documents\Github\C_Sharp_Programming_Bible\UdpServerClientExam\UdpClientExam\UdpClientExam\bin\Debug\UdpClientExam.pdb
+C:\Users\imeco\Documents\Github\C_Sharp_Programming_Bible\UdpServerClientExam\UdpClientExam\UdpClientExam\obj\Debug\UdpClientExam.csprojResolveAssemblyReference.cache

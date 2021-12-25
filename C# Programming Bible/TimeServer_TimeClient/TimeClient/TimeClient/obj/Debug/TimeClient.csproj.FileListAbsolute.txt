@@ -1,0 +1,9 @@
+C:\Users\imeco\Desktop\Test\TimeClient\TimeClient\bin\Debug\`.exe.config
+C:\Users\imeco\Desktop\Test\TimeClient\TimeClient\bin\Debug\`.exe
+C:\Users\imeco\Desktop\Test\TimeClient\TimeClient\bin\Debug\`.pdb
+C:\Users\imeco\Desktop\Test\TimeClient\TimeClient\obj\Debug\TimeClient.Form1.resources
+C:\Users\imeco\Desktop\Test\TimeClient\TimeClient\obj\Debug\TimeClient.Properties.Resources.resources
+C:\Users\imeco\Desktop\Test\TimeClient\TimeClient\obj\Debug\TimeClient.csproj.GenerateResource.Cache
+C:\Users\imeco\Desktop\Test\TimeClient\TimeClient\obj\Debug\`.exe
+C:\Users\imeco\Desktop\Test\TimeClient\TimeClient\obj\Debug\`.pdb
+C:\Users\imeco\Desktop\Test\TimeClient\TimeClient\obj\Debug\TimeClient.csprojResolveAssemblyReference.cache

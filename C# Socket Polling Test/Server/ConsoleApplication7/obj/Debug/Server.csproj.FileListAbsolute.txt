@@ -1,0 +1,8 @@
+c:\users\bluis\documents\visual studio 2013\Projects\ConsoleApplication7\ConsoleApplication7\bin\Debug\ConsoleApplication7.exe.config
+c:\users\bluis\documents\visual studio 2013\Projects\ConsoleApplication7\ConsoleApplication7\bin\Debug\ConsoleApplication7.exe
+c:\users\bluis\documents\visual studio 2013\Projects\ConsoleApplication7\ConsoleApplication7\bin\Debug\ConsoleApplication7.pdb
+c:\users\bluis\documents\visual studio 2013\Projects\ConsoleApplication7\ConsoleApplication7\obj\Debug\ConsoleApplication7.exe
+c:\users\bluis\documents\visual studio 2013\Projects\ConsoleApplication7\ConsoleApplication7\obj\Debug\ConsoleApplication7.pdb
+C:\Users\bluis\Desktop\Socket_Polling_Test\Server\ConsoleApplication7\bin\Debug\ConsoleApplication7.exe.config
+C:\Users\bluis\Desktop\Socket_Polling_Test\Server\ConsoleApplication7\obj\Debug\ConsoleApplication7.exe
+C:\Users\bluis\Desktop\Socket_Polling_Test\Server\ConsoleApplication7\obj\Debug\ConsoleApplication7.pdb

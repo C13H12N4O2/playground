@@ -1,0 +1,9 @@
+C:\Users\imeco\Desktop\Test\UdpSrvExam\UdpSrvExam\bin\Debug\UdpSrvExam.exe.config
+C:\Users\imeco\Desktop\Test\UdpSrvExam\UdpSrvExam\bin\Debug\UdpSrvExam.exe
+C:\Users\imeco\Desktop\Test\UdpSrvExam\UdpSrvExam\bin\Debug\UdpSrvExam.pdb
+C:\Users\imeco\Desktop\Test\UdpSrvExam\UdpSrvExam\obj\Debug\UdpSrvExam.csprojResolveAssemblyReference.cache
+C:\Users\imeco\Desktop\Test\UdpSrvExam\UdpSrvExam\obj\Debug\UdpSrvExam.exe
+C:\Users\imeco\Desktop\Test\UdpSrvExam\UdpSrvExam\obj\Debug\UdpSrvExam.pdb
+C:\Users\imeco\Documents\Github\C_Sharp_Programming_Bible\UdpServerClientExam\UdpSrvExam\UdpSrvExam\bin\Debug\UdpSrvExam.exe.config
+C:\Users\imeco\Documents\Github\C_Sharp_Programming_Bible\UdpServerClientExam\UdpSrvExam\UdpSrvExam\obj\Debug\UdpSrvExam.exe
+C:\Users\imeco\Documents\Github\C_Sharp_Programming_Bible\UdpServerClientExam\UdpSrvExam\UdpSrvExam\obj\Debug\UdpSrvExam.pdb

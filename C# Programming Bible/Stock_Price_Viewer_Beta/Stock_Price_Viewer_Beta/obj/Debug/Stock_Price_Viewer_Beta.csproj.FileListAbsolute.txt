@@ -1,0 +1,10 @@
+C:\Users\imeco\Desktop\Test\Stock_Price_Viewer_Beta\Stock_Price_Viewer_Beta\bin\Debug\Stock_Price_Viewer_Beta.exe.config
+C:\Users\imeco\Desktop\Test\Stock_Price_Viewer_Beta\Stock_Price_Viewer_Beta\bin\Debug\Stock_Price_Viewer_Beta.exe
+C:\Users\imeco\Desktop\Test\Stock_Price_Viewer_Beta\Stock_Price_Viewer_Beta\bin\Debug\Stock_Price_Viewer_Beta.pdb
+C:\Users\imeco\Desktop\Test\Stock_Price_Viewer_Beta\Stock_Price_Viewer_Beta\obj\Debug\Stock_Price_Viewer_Beta.csprojResolveAssemblyReference.cache
+C:\Users\imeco\Desktop\Test\Stock_Price_Viewer_Beta\Stock_Price_Viewer_Beta\obj\Debug\Stock_Price_Viewer_Beta.Form1.resources
+C:\Users\imeco\Desktop\Test\Stock_Price_Viewer_Beta\Stock_Price_Viewer_Beta\obj\Debug\Stock_Price_Viewer_Beta.Properties.Resources.resources
+C:\Users\imeco\Desktop\Test\Stock_Price_Viewer_Beta\Stock_Price_Viewer_Beta\obj\Debug\Stock_Price_Viewer_Beta.csproj.GenerateResource.Cache
+C:\Users\imeco\Desktop\Test\Stock_Price_Viewer_Beta\Stock_Price_Viewer_Beta\obj\Debug\Stock_Price_Viewer_Beta.exe
+C:\Users\imeco\Desktop\Test\Stock_Price_Viewer_Beta\Stock_Price_Viewer_Beta\obj\Debug\Stock_Price_Viewer_Beta.pdb
+C:\Users\imeco\Desktop\Test\Stock_Price_Viewer_Beta\Stock_Price_Viewer_Beta\obj\Debug\Stock_Price_Viewer_Beta.exe.licenses

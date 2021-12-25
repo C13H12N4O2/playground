@@ -1,0 +1,6 @@
+C:\Users\imeco\Desktop\Test\DownloadDataExam\DownloadDataExam\bin\Debug\DownloadDataExam.exe.config
+C:\Users\imeco\Desktop\Test\DownloadDataExam\DownloadDataExam\bin\Debug\DownloadDataExam.exe
+C:\Users\imeco\Desktop\Test\DownloadDataExam\DownloadDataExam\bin\Debug\DownloadDataExam.pdb
+C:\Users\imeco\Desktop\Test\DownloadDataExam\DownloadDataExam\obj\Debug\DownloadDataExam.csprojResolveAssemblyReference.cache
+C:\Users\imeco\Desktop\Test\DownloadDataExam\DownloadDataExam\obj\Debug\DownloadDataExam.exe
+C:\Users\imeco\Desktop\Test\DownloadDataExam\DownloadDataExam\obj\Debug\DownloadDataExam.pdb

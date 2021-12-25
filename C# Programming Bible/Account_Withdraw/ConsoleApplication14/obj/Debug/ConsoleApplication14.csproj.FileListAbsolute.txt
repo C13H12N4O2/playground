@@ -1,0 +1,6 @@
+C:\Users\imeco\Desktop\Test\ConsoleApplication14\ConsoleApplication14\bin\Debug\ConsoleApplication14.exe.config
+C:\Users\imeco\Desktop\Test\ConsoleApplication14\ConsoleApplication14\bin\Debug\ConsoleApplication14.exe
+C:\Users\imeco\Desktop\Test\ConsoleApplication14\ConsoleApplication14\bin\Debug\ConsoleApplication14.pdb
+C:\Users\imeco\Desktop\Test\ConsoleApplication14\ConsoleApplication14\obj\Debug\ConsoleApplication14.csprojResolveAssemblyReference.cache
+C:\Users\imeco\Desktop\Test\ConsoleApplication14\ConsoleApplication14\obj\Debug\ConsoleApplication14.exe
+C:\Users\imeco\Desktop\Test\ConsoleApplication14\ConsoleApplication14\obj\Debug\ConsoleApplication14.pdb

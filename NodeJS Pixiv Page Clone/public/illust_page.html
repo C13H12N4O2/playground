@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Illust</title>
+        <link rel="stylesheet" href="/public?name=style.css">
+    </head>
+
+    <body>
+        <div id="root">
+            <h1 class="header">
+            </h1>
+            <div class="main">
+                <main class="frame">
+                    <section class="content">
+                        <figure class="illust_frame">
+                            <section role="presentation" class="presentation">
+                            </section>
+                        </figure>
+                    </section>
+                </main>
+                </section>
+            </div>
+        </div>
+        
+        <script>
+            
+            var requestURL = 'json?name=test.json';
+            var request = new XMLHttpRequest();
+            request.open('GET', requestURL);
+            request.responseType = 'json';
+            request.send();
+            request.onload = function() {
+                var data = request.response;
+                console.log(data['illust']);
+                make_illust_page(data);
+            }
+            
+            function make_illust_page(jsonObj) {
+                var presentation = document.querySelector('.presentation');
+                var illust = jsonObj['illust'];
+    
+                var href = document.createElement('a');
+                href.setAttribute('href', `/img?illusts=${illust['url']}`);
+                href.setAttribute('target', '_blank');
+                href.setAttribute('rel', 'noopener');
+                
+                var img = document.createElement('img');
+                img.setAttribute('src', `/img?illusts=${illust['url']}`)
+                img.setAttribute('class', 'img_original')
+                    
+                href.appendChild(img);
+                presentation.appendChild(href);
+            }
+            
+        </script>
+    
+    </body>
+</html>

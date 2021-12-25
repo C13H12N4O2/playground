@@ -1,0 +1,6 @@
+C:\Users\imeco\Desktop\Test\ConsoleApplication15\ConsoleApplication15\bin\Debug\ConsoleApplication15.exe.config
+C:\Users\imeco\Desktop\Test\ConsoleApplication15\ConsoleApplication15\bin\Debug\ConsoleApplication15.exe
+C:\Users\imeco\Desktop\Test\ConsoleApplication15\ConsoleApplication15\bin\Debug\ConsoleApplication15.pdb
+C:\Users\imeco\Desktop\Test\ConsoleApplication15\ConsoleApplication15\obj\Debug\ConsoleApplication15.exe
+C:\Users\imeco\Desktop\Test\ConsoleApplication15\ConsoleApplication15\obj\Debug\ConsoleApplication15.pdb
+C:\Users\imeco\Desktop\Test\ConsoleApplication15\ConsoleApplication15\obj\Debug\ConsoleApplication15.csprojResolveAssemblyReference.cache

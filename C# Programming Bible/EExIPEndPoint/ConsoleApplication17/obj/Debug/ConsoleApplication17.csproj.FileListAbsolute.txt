@@ -1,0 +1,5 @@
+C:\Users\imeco\Desktop\Test\ConsoleApplication17\ConsoleApplication17\bin\Debug\ConsoleApplication17.exe.config
+C:\Users\imeco\Desktop\Test\ConsoleApplication17\ConsoleApplication17\bin\Debug\ConsoleApplication17.exe
+C:\Users\imeco\Desktop\Test\ConsoleApplication17\ConsoleApplication17\bin\Debug\ConsoleApplication17.pdb
+C:\Users\imeco\Desktop\Test\ConsoleApplication17\ConsoleApplication17\obj\Debug\ConsoleApplication17.exe
+C:\Users\imeco\Desktop\Test\ConsoleApplication17\ConsoleApplication17\obj\Debug\ConsoleApplication17.pdb

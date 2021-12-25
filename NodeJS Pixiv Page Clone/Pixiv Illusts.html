@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Pixiv Illusts</title>
+        <link rel="stylesheet" href="/public?name=style.css">
+    </head>
+
+    <body>
+
+        <div id="root">
+            <h1 class="header">
+            </h1>
+            <div class="main">
+                <ul class="illust_list">
+                </ul>
+            </div>
+        </div>
+        
+        <script>
+            
+            var requestURL = 'json?name=show.json';
+            var request = new XMLHttpRequest();
+            request.open('GET', requestURL);
+            request.responseType = 'json';
+            request.send();
+            request.onload = function() {
+                var data = request.response;
+                make_illust_list(data);
+            }
+            
+            var header = document.querySelector('.header');
+            header.innerHTML = 'Pixiv Illusts';
+            
+            function make_illust_list(jsonObj) {
+                var illust_list = document.querySelector('.illust_list');
+                var illusts = jsonObj['illusts'];
+                for (var i = 0; i != illusts.length; ++i) {
+                    var list_item = document.createElement('li');
+                    var illust_item = document.createElement('div');
+                    var title_item = document.createElement('div');
+                    var href = document.createElement('a');
+                    illust_item.setAttribute('class', 'illust');
+                    title_item.setAttribute('class', 'title');
+                    title_item.innerText = illusts[i]['title'];
+                    href.setAttribute('href', `/illust_page?illust_id=${illusts[i]['url']}`);
+                    var img = document.createElement('img');
+                    img.setAttribute('src', `/img?illusts=${illusts[i]['url']}`)
+                    img.setAttribute('class', 'img_small')
+                    
+                    href.appendChild(img);
+                    illust_item.appendChild(href);
+                    list_item.appendChild(illust_item);
+                    list_item.appendChild(title_item);
+                    illust_list.appendChild(list_item);
+                }
+            }
+            
+        </script>
+    
+    </body>
+</html>

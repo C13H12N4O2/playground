@@ -1,0 +1,6 @@
+C:\Users\imeco\Desktop\Test\ObjectExam1\ObjectExam1\bin\Debug\ObjectExam1.exe.config
+C:\Users\imeco\Desktop\Test\ObjectExam1\ObjectExam1\bin\Debug\ObjectExam1.exe
+C:\Users\imeco\Desktop\Test\ObjectExam1\ObjectExam1\bin\Debug\ObjectExam1.pdb
+C:\Users\imeco\Desktop\Test\ObjectExam1\ObjectExam1\obj\Debug\ObjectExam1.csprojResolveAssemblyReference.cache
+C:\Users\imeco\Desktop\Test\ObjectExam1\ObjectExam1\obj\Debug\ObjectExam1.exe
+C:\Users\imeco\Desktop\Test\ObjectExam1\ObjectExam1\obj\Debug\ObjectExam1.pdb

@@ -1,0 +1,6 @@
+C:\Users\imeco\Desktop\Test\ConsoleApplication8\ConsoleApplication8\bin\Debug\ConsoleApplication8.exe.config
+C:\Users\imeco\Desktop\Test\ConsoleApplication8\ConsoleApplication8\bin\Debug\ConsoleApplication8.exe
+C:\Users\imeco\Desktop\Test\ConsoleApplication8\ConsoleApplication8\bin\Debug\ConsoleApplication8.pdb
+C:\Users\imeco\Desktop\Test\ConsoleApplication8\ConsoleApplication8\obj\Debug\ConsoleApplication8.csprojResolveAssemblyReference.cache
+C:\Users\imeco\Desktop\Test\ConsoleApplication8\ConsoleApplication8\obj\Debug\ConsoleApplication8.exe
+C:\Users\imeco\Desktop\Test\ConsoleApplication8\ConsoleApplication8\obj\Debug\ConsoleApplication8.pdb

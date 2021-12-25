@@ -1,0 +1,9 @@
+C:\Users\imeco\Desktop\Test\lambdaExam2\lambdaExam2\bin\Debug\lambdaExam2.exe.config
+C:\Users\imeco\Desktop\Test\lambdaExam2\lambdaExam2\bin\Debug\lambdaExam2.exe
+C:\Users\imeco\Desktop\Test\lambdaExam2\lambdaExam2\bin\Debug\lambdaExam2.pdb
+C:\Users\imeco\Desktop\Test\lambdaExam2\lambdaExam2\obj\Debug\lambdaExam2.csprojResolveAssemblyReference.cache
+C:\Users\imeco\Desktop\Test\lambdaExam2\lambdaExam2\obj\Debug\lambdaExam2.Form1.resources
+C:\Users\imeco\Desktop\Test\lambdaExam2\lambdaExam2\obj\Debug\lambdaExam2.Properties.Resources.resources
+C:\Users\imeco\Desktop\Test\lambdaExam2\lambdaExam2\obj\Debug\lambdaExam2.csproj.GenerateResource.Cache
+C:\Users\imeco\Desktop\Test\lambdaExam2\lambdaExam2\obj\Debug\lambdaExam2.exe
+C:\Users\imeco\Desktop\Test\lambdaExam2\lambdaExam2\obj\Debug\lambdaExam2.pdb

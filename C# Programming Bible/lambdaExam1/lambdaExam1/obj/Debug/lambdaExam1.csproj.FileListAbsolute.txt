@@ -1,0 +1,5 @@
+C:\Users\imeco\Desktop\Test\lambdaExam1\lambdaExam1\bin\Debug\lambdaExam1.exe.config
+C:\Users\imeco\Desktop\Test\lambdaExam1\lambdaExam1\bin\Debug\lambdaExam1.exe
+C:\Users\imeco\Desktop\Test\lambdaExam1\lambdaExam1\bin\Debug\lambdaExam1.pdb
+C:\Users\imeco\Desktop\Test\lambdaExam1\lambdaExam1\obj\Debug\lambdaExam1.exe
+C:\Users\imeco\Desktop\Test\lambdaExam1\lambdaExam1\obj\Debug\lambdaExam1.pdb

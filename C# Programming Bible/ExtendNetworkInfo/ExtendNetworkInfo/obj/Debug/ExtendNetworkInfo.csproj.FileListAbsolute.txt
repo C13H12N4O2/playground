@@ -1,0 +1,5 @@
+C:\Users\imeco\Desktop\Test\ExtendNetworkInfo\ExtendNetworkInfo\bin\Debug\ExtendNetworkInfo.exe.config
+C:\Users\imeco\Desktop\Test\ExtendNetworkInfo\ExtendNetworkInfo\bin\Debug\ExtendNetworkInfo.exe
+C:\Users\imeco\Desktop\Test\ExtendNetworkInfo\ExtendNetworkInfo\bin\Debug\ExtendNetworkInfo.pdb
+C:\Users\imeco\Desktop\Test\ExtendNetworkInfo\ExtendNetworkInfo\obj\Debug\ExtendNetworkInfo.exe
+C:\Users\imeco\Desktop\Test\ExtendNetworkInfo\ExtendNetworkInfo\obj\Debug\ExtendNetworkInfo.pdb

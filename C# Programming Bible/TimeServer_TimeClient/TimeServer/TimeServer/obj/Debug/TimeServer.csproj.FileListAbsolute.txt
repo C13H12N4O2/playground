@@ -1,0 +1,9 @@
+C:\Users\imeco\Desktop\Test\TimeServer\TimeServer\bin\Debug\TimeServer.exe.config
+C:\Users\imeco\Desktop\Test\TimeServer\TimeServer\bin\Debug\TimeServer.exe
+C:\Users\imeco\Desktop\Test\TimeServer\TimeServer\bin\Debug\TimeServer.pdb
+C:\Users\imeco\Desktop\Test\TimeServer\TimeServer\obj\Debug\TimeServer.csprojResolveAssemblyReference.cache
+C:\Users\imeco\Desktop\Test\TimeServer\TimeServer\obj\Debug\TimeServer.Form1.resources
+C:\Users\imeco\Desktop\Test\TimeServer\TimeServer\obj\Debug\TimeServer.Properties.Resources.resources
+C:\Users\imeco\Desktop\Test\TimeServer\TimeServer\obj\Debug\TimeServer.csproj.GenerateResource.Cache
+C:\Users\imeco\Desktop\Test\TimeServer\TimeServer\obj\Debug\TimeServer.exe
+C:\Users\imeco\Desktop\Test\TimeServer\TimeServer\obj\Debug\TimeServer.pdb

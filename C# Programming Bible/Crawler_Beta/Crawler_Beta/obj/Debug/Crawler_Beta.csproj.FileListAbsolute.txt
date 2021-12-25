@@ -1,0 +1,9 @@
+C:\Users\imeco\Desktop\Test\Crawler_Beta\Crawler_Beta\bin\Debug\Crawler_Beta.exe.config
+C:\Users\imeco\Desktop\Test\Crawler_Beta\Crawler_Beta\bin\Debug\Crawler_Beta.exe
+C:\Users\imeco\Desktop\Test\Crawler_Beta\Crawler_Beta\bin\Debug\Crawler_Beta.pdb
+C:\Users\imeco\Desktop\Test\Crawler_Beta\Crawler_Beta\obj\Debug\Crawler_Beta.csprojResolveAssemblyReference.cache
+C:\Users\imeco\Desktop\Test\Crawler_Beta\Crawler_Beta\obj\Debug\Crawler_Beta.Form1.resources
+C:\Users\imeco\Desktop\Test\Crawler_Beta\Crawler_Beta\obj\Debug\Crawler_Beta.Properties.Resources.resources
+C:\Users\imeco\Desktop\Test\Crawler_Beta\Crawler_Beta\obj\Debug\Crawler_Beta.csproj.GenerateResource.Cache
+C:\Users\imeco\Desktop\Test\Crawler_Beta\Crawler_Beta\obj\Debug\Crawler_Beta.exe
+C:\Users\imeco\Desktop\Test\Crawler_Beta\Crawler_Beta\obj\Debug\Crawler_Beta.pdb
