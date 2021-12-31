@@ -1,2 +1,9 @@
 .DS_Store
 .git
+/C++ OLC Game Server Client/Server/Net/Libraries/asio-1.20.0
+/C++ OLC Game Server Client/Server/Client/x64/Debug
+/C++ OLC Game Server Client/Server/Net/x64/Debug
+/C++ OLC Game Server Client/Server/Server/x64/Debug
+*.ipch
+*.db
+*.opendb
