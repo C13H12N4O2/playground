@@ -22,4 +22,5 @@ int main(int argc, char** argv) {
   glutCreateWindow("Server");
   glutDisplayFunc(display);
   glutMainLoop();
+  
 }

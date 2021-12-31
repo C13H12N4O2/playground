@@ -7,16 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		438DC6DC277DDEA100B662C7 /* server.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 438DC6DB277DDEA100B662C7 /* server.cpp */; settings = {COMPILER_FLAGS = "-w"; }; };
-		438DC6E4277DDEAC00B662C7 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 438DC6E3277DDEAC00B662C7 /* OpenGL.framework */; platformFilter = maccatalyst; };
-		438DC6E6277DDEBB00B662C7 /* libGLEW.2.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 438DC6E5277DDEBB00B662C7 /* libGLEW.2.2.0.dylib */; };
-		438DC6E7277DDEBB00B662C7 /* libGLEW.2.2.0.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 438DC6E5277DDEBB00B662C7 /* libGLEW.2.2.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		438DC6EA277DDEC700B662C7 /* libglfw.3.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 438DC6E9277DDEC700B662C7 /* libglfw.3.3.dylib */; };
-		438DC6EB277DDEC700B662C7 /* libglfw.3.3.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 438DC6E9277DDEC700B662C7 /* libglfw.3.3.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		438DC73A277EC68B00B662C7 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 438DC739277EC68B00B662C7 /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		438DC6D6277DDEA100B662C7 /* CopyFiles */ = {
+		438DC734277EC68B00B662C7 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -25,115 +20,83 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
-		438DC6E8277DDEBB00B662C7 /* Embed Libraries */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				438DC6EB277DDEC700B662C7 /* libglfw.3.3.dylib in Embed Libraries */,
-				438DC6E7277DDEBB00B662C7 /* libGLEW.2.2.0.dylib in Embed Libraries */,
-			);
-			name = "Embed Libraries";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		438DC6D8277DDEA100B662C7 /* C++ OpenGL Asio Server Client */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "C++ OpenGL Asio Server Client"; sourceTree = BUILT_PRODUCTS_DIR; };
-		438DC6DB277DDEA100B662C7 /* server.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = server.cpp; sourceTree = "<group>"; };
-		438DC6E3277DDEAC00B662C7 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
-		438DC6E5277DDEBB00B662C7 /* libGLEW.2.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libGLEW.2.2.0.dylib; path = ../../../../../../usr/local/Cellar/glew/2.2.0_1/lib/libGLEW.2.2.0.dylib; sourceTree = "<group>"; };
-		438DC6E9277DDEC700B662C7 /* libglfw.3.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.3.dylib; path = ../../../../../../usr/local/Cellar/glfw/3.3.6/lib/libglfw.3.3.dylib; sourceTree = "<group>"; };
-		438DC6EC277DE11100B662C7 /* asio.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = asio.hpp; path = ../../../../../../usr/local/Cellar/asio/1.20.0/include/asio.hpp; sourceTree = "<group>"; };
+		438DC736277EC68B00B662C7 /* Client */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Client; sourceTree = BUILT_PRODUCTS_DIR; };
+		438DC739277EC68B00B662C7 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		438DC6D5277DDEA100B662C7 /* Frameworks */ = {
+		438DC733277EC68B00B662C7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				438DC6EA277DDEC700B662C7 /* libglfw.3.3.dylib in Frameworks */,
-				438DC6E4277DDEAC00B662C7 /* OpenGL.framework in Frameworks */,
-				438DC6E6277DDEBB00B662C7 /* libGLEW.2.2.0.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		438DC6CF277DDEA100B662C7 = {
+		438DC72D277EC68A00B662C7 = {
 			isa = PBXGroup;
 			children = (
-				438DC6DA277DDEA100B662C7 /* C++ OpenGL Asio Server Client */,
-				438DC6D9277DDEA100B662C7 /* Products */,
-				438DC6E2277DDEAC00B662C7 /* Frameworks */,
+				438DC738277EC68B00B662C7 /* Client */,
+				438DC737277EC68B00B662C7 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		438DC6D9277DDEA100B662C7 /* Products */ = {
+		438DC737277EC68B00B662C7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				438DC6D8277DDEA100B662C7 /* C++ OpenGL Asio Server Client */,
+				438DC736277EC68B00B662C7 /* Client */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		438DC6DA277DDEA100B662C7 /* C++ OpenGL Asio Server Client */ = {
+		438DC738277EC68B00B662C7 /* Client */ = {
 			isa = PBXGroup;
 			children = (
-				438DC6DB277DDEA100B662C7 /* server.cpp */,
+				438DC739277EC68B00B662C7 /* main.cpp */,
 			);
-			path = "C++ OpenGL Asio Server Client";
-			sourceTree = "<group>";
-		};
-		438DC6E2277DDEAC00B662C7 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				438DC6EC277DE11100B662C7 /* asio.hpp */,
-				438DC6E9277DDEC700B662C7 /* libglfw.3.3.dylib */,
-				438DC6E5277DDEBB00B662C7 /* libGLEW.2.2.0.dylib */,
-				438DC6E3277DDEAC00B662C7 /* OpenGL.framework */,
-			);
-			name = Frameworks;
+			path = Client;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		438DC6D7277DDEA100B662C7 /* C++ OpenGL Asio Server Client */ = {
+		438DC735277EC68B00B662C7 /* Client */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 438DC6DF277DDEA100B662C7 /* Build configuration list for PBXNativeTarget "C++ OpenGL Asio Server Client" */;
+			buildConfigurationList = 438DC73D277EC68B00B662C7 /* Build configuration list for PBXNativeTarget "Client" */;
 			buildPhases = (
-				438DC6D4277DDEA100B662C7 /* Sources */,
-				438DC6D5277DDEA100B662C7 /* Frameworks */,
-				438DC6D6277DDEA100B662C7 /* CopyFiles */,
-				438DC6E8277DDEBB00B662C7 /* Embed Libraries */,
+				438DC732277EC68B00B662C7 /* Sources */,
+				438DC733277EC68B00B662C7 /* Frameworks */,
+				438DC734277EC68B00B662C7 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "C++ OpenGL Asio Server Client";
-			productName = "C++ OpenGL Asio Server Client";
-			productReference = 438DC6D8277DDEA100B662C7 /* C++ OpenGL Asio Server Client */;
+			name = Client;
+			productName = Client;
+			productReference = 438DC736277EC68B00B662C7 /* Client */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		438DC6D0277DDEA100B662C7 /* Project object */ = {
+		438DC72E277EC68A00B662C7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastUpgradeCheck = 1320;
 				TargetAttributes = {
-					438DC6D7277DDEA100B662C7 = {
+					438DC735277EC68B00B662C7 = {
 						CreatedOnToolsVersion = 13.2.1;
 					};
 				};
 			};
-			buildConfigurationList = 438DC6D3277DDEA100B662C7 /* Build configuration list for PBXProject "C++ OpenGL Asio Server Client" */;
+			buildConfigurationList = 438DC731277EC68A00B662C7 /* Build configuration list for PBXProject "Client" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -141,29 +104,29 @@
 				en,
 				Base,
 			);
-			mainGroup = 438DC6CF277DDEA100B662C7;
-			productRefGroup = 438DC6D9277DDEA100B662C7 /* Products */;
+			mainGroup = 438DC72D277EC68A00B662C7;
+			productRefGroup = 438DC737277EC68B00B662C7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				438DC6D7277DDEA100B662C7 /* C++ OpenGL Asio Server Client */,
+				438DC735277EC68B00B662C7 /* Client */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		438DC6D4277DDEA100B662C7 /* Sources */ = {
+		438DC732277EC68B00B662C7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				438DC6DC277DDEA100B662C7 /* server.cpp in Sources */,
+				438DC73A277EC68B00B662C7 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		438DC6DD277DDEA100B662C7 /* Debug */ = {
+		438DC73B277EC68B00B662C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -222,7 +185,7 @@
 			};
 			name = Debug;
 		};
-		438DC6DE277DDEA100B662C7 /* Release */ = {
+		438DC73C277EC68B00B662C7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -274,42 +237,18 @@
 			};
 			name = Release;
 		};
-		438DC6E0277DDEA100B662C7 /* Debug */ = {
+		438DC73E277EC68B00B662C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				HEADER_SEARCH_PATHS = /usr/local/Cellar/asio/1.20.0/include;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					/usr/local/Cellar/glew/2.2.0_1/lib,
-					/usr/local/Cellar/glfw/3.3.6/lib,
-				);
-				OTHER_LDFLAGS = (
-					"-framework",
-					GLUT,
-					"-framework",
-					OpenGL,
-				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		438DC6E1277DDEA100B662C7 /* Release */ = {
+		438DC73F277EC68B00B662C7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				HEADER_SEARCH_PATHS = /usr/local/Cellar/asio/1.20.0/include;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					/usr/local/Cellar/glew/2.2.0_1/lib,
-					/usr/local/Cellar/glfw/3.3.6/lib,
-				);
-				OTHER_LDFLAGS = (
-					"-framework",
-					GLUT,
-					"-framework",
-					OpenGL,
-				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -317,25 +256,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		438DC6D3277DDEA100B662C7 /* Build configuration list for PBXProject "C++ OpenGL Asio Server Client" */ = {
+		438DC731277EC68A00B662C7 /* Build configuration list for PBXProject "Client" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				438DC6DD277DDEA100B662C7 /* Debug */,
-				438DC6DE277DDEA100B662C7 /* Release */,
+				438DC73B277EC68B00B662C7 /* Debug */,
+				438DC73C277EC68B00B662C7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		438DC6DF277DDEA100B662C7 /* Build configuration list for PBXNativeTarget "C++ OpenGL Asio Server Client" */ = {
+		438DC73D277EC68B00B662C7 /* Build configuration list for PBXNativeTarget "Client" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				438DC6E0277DDEA100B662C7 /* Debug */,
-				438DC6E1277DDEA100B662C7 /* Release */,
+				438DC73E277EC68B00B662C7 /* Debug */,
+				438DC73F277EC68B00B662C7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 438DC6D0277DDEA100B662C7 /* Project object */;
+	rootObject = 438DC72E277EC68A00B662C7 /* Project object */;
 }

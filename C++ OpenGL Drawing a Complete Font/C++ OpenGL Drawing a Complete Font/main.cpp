@@ -74,6 +74,8 @@ void display() {
   glClear(GL_COLOR_BUFFER_BIT);
   glColor3fv(white);
   
+  glRasterPos2i(20, 80);
+  printString("SERVER ON");
   glRasterPos2i(20, 60);
   printString("THE QUICK BROWN FOX JUMPS");
   glRasterPos2i(20, 40);
