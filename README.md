@@ -47,8 +47,6 @@
 
 [C++ OpenGL Transformations](https://github.com/C13H12N4O2/playground/tree/main/C%2B%2B%20OpenGL%20Transformations)
 
----
-
 ## Dependencies
 - OpenGL
 - GLUT
@@ -94,6 +92,7 @@
 
 [C++ OpenGL Triangle](https://github.com/C13H12N4O2/playground/tree/main/C%2B%2B%20OpenGL%20Triangle)
 
+---
 
 # C#
 
@@ -117,6 +116,7 @@
 
 [C# Windows Forms C# Programming Bible](https://github.com/C13H12N4O2/playground/tree/main/C%23%20Programming%20Bible)
 
+---
 
 # Javascript
 
