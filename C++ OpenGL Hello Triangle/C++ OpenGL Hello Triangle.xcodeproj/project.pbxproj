@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		438DC7EE2780732700B662C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 438DC7ED2780732700B662C7 /* main.m */; };
+		438DC7EE2780732700B662C7 /* 하지만 in Sources */ = {isa = PBXBuildFile; fileRef = 438DC7ED2780732700B662C7 /* 하지만 */; };
 		438DC7F62780734E00B662C7 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 438DC7F52780734E00B662C7 /* OpenGL.framework */; platformFilter = maccatalyst; };
 		438DC7F82780735D00B662C7 /* libglfw.3.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 438DC7F72780735D00B662C7 /* libglfw.3.3.dylib */; };
 		438DC7F92780735D00B662C7 /* libglfw.3.3.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 438DC7F72780735D00B662C7 /* libglfw.3.3.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
@@ -39,7 +39,7 @@
 
 /* Begin PBXFileReference section */
 		438DC7EA2780732700B662C7 /* C++ OpenGL Hello Triangle */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "C++ OpenGL Hello Triangle"; sourceTree = BUILT_PRODUCTS_DIR; };
-		438DC7ED2780732700B662C7 /* main.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; path = main.m; sourceTree = "<group>"; };
+		438DC7ED2780732700B662C7 /* 하지만 */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; path = "하지만"; sourceTree = "<group>"; };
 		438DC7F52780734E00B662C7 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		438DC7F72780735D00B662C7 /* libglfw.3.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.3.dylib; path = ../../../../../../usr/local/Cellar/glfw/3.3.6/lib/libglfw.3.3.dylib; sourceTree = "<group>"; };
 		438DC7FB2780739900B662C7 /* glad.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = glad.c; sourceTree = "<group>"; };
@@ -78,7 +78,7 @@
 		438DC7EC2780732700B662C7 /* C++ OpenGL Hello Triangle */ = {
 			isa = PBXGroup;
 			children = (
-				438DC7ED2780732700B662C7 /* main.m */,
+				438DC7ED2780732700B662C7 /* 하지만 */,
 				438DC7FB2780739900B662C7 /* glad.c */,
 			);
 			path = "C++ OpenGL Hello Triangle";
@@ -151,7 +151,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				438DC7EE2780732700B662C7 /* main.m in Sources */,
+				438DC7EE2780732700B662C7 /* 하지만 in Sources */,
 				438DC7FC2780739900B662C7 /* glad.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
