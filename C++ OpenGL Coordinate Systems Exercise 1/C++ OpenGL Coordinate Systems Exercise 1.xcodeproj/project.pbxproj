@@ -7,15 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		438DC7EE2780732700B662C7 /* 하지만 in Sources */ = {isa = PBXBuildFile; fileRef = 438DC7ED2780732700B662C7 /* 하지만 */; };
-		438DC7F62780734E00B662C7 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 438DC7F52780734E00B662C7 /* OpenGL.framework */; platformFilter = maccatalyst; };
-		438DC7F82780735D00B662C7 /* libglfw.3.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 438DC7F72780735D00B662C7 /* libglfw.3.3.dylib */; };
-		438DC7F92780735D00B662C7 /* libglfw.3.3.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 438DC7F72780735D00B662C7 /* libglfw.3.3.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		438DC7FC2780739900B662C7 /* glad.c in Sources */ = {isa = PBXBuildFile; fileRef = 438DC7FB2780739900B662C7 /* glad.c */; };
+		438DCB162786EACE00B662C7 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 438DCB152786EACE00B662C7 /* main.cpp */; };
+		438DCB1E2786EAD400B662C7 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 438DCB1D2786EAD400B662C7 /* OpenGL.framework */; platformFilter = maccatalyst; };
+		438DCB202786EAE300B662C7 /* libglfw.3.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 438DCB1F2786EAE300B662C7 /* libglfw.3.3.dylib */; };
+		438DCB212786EAE300B662C7 /* libglfw.3.3.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 438DCB1F2786EAE300B662C7 /* libglfw.3.3.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		438DCB2A2786EB5800B662C7 /* glad.c in Sources */ = {isa = PBXBuildFile; fileRef = 438DCB272786EB5700B662C7 /* glad.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		438DC7E82780732700B662C7 /* CopyFiles */ = {
+		438DCB102786EACE00B662C7 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -24,13 +24,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
-		438DC7FA2780735D00B662C7 /* Embed Libraries */ = {
+		438DCB222786EAE400B662C7 /* Embed Libraries */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				438DC7F92780735D00B662C7 /* libglfw.3.3.dylib in Embed Libraries */,
+				438DCB212786EAE300B662C7 /* libglfw.3.3.dylib in Embed Libraries */,
 			);
 			name = "Embed Libraries";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -38,57 +38,69 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		438DC7EA2780732700B662C7 /* C++ OpenGL Hello Triangle */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "C++ OpenGL Hello Triangle"; sourceTree = BUILT_PRODUCTS_DIR; };
-		438DC7ED2780732700B662C7 /* 하지만 */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; path = "하지만"; sourceTree = "<group>"; };
-		438DC7F52780734E00B662C7 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
-		438DC7F72780735D00B662C7 /* libglfw.3.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.3.dylib; path = ../../../../../../usr/local/Cellar/glfw/3.3.6/lib/libglfw.3.3.dylib; sourceTree = "<group>"; };
-		438DC7FB2780739900B662C7 /* glad.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = glad.c; sourceTree = "<group>"; };
+		438DCB122786EACE00B662C7 /* C++ OpenGL Coordinate Systems Exercise 1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "C++ OpenGL Coordinate Systems Exercise 1"; sourceTree = BUILT_PRODUCTS_DIR; };
+		438DCB152786EACE00B662C7 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		438DCB1D2786EAD400B662C7 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		438DCB1F2786EAE300B662C7 /* libglfw.3.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.3.dylib; path = ../../../../../../usr/local/Cellar/glfw/3.3.6/lib/libglfw.3.3.dylib; sourceTree = "<group>"; };
+		438DCB232786EB5700B662C7 /* shader.vs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = shader.vs; sourceTree = "<group>"; };
+		438DCB242786EB5700B662C7 /* Shader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Shader.h; sourceTree = "<group>"; };
+		438DCB252786EB5700B662C7 /* container.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = container.jpg; sourceTree = "<group>"; };
+		438DCB262786EB5700B662C7 /* shader.fs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = shader.fs; sourceTree = "<group>"; };
+		438DCB272786EB5700B662C7 /* glad.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = glad.c; sourceTree = "<group>"; };
+		438DCB282786EB5800B662C7 /* awesomeface.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = awesomeface.png; sourceTree = "<group>"; };
+		438DCB292786EB5800B662C7 /* stb_image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stb_image.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		438DC7E72780732700B662C7 /* Frameworks */ = {
+		438DCB0F2786EACE00B662C7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				438DC7F82780735D00B662C7 /* libglfw.3.3.dylib in Frameworks */,
-				438DC7F62780734E00B662C7 /* OpenGL.framework in Frameworks */,
+				438DCB202786EAE300B662C7 /* libglfw.3.3.dylib in Frameworks */,
+				438DCB1E2786EAD400B662C7 /* OpenGL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		438DC7E12780732700B662C7 = {
+		438DCB092786EACD00B662C7 = {
 			isa = PBXGroup;
 			children = (
-				438DC7EC2780732700B662C7 /* C++ OpenGL Hello Triangle */,
-				438DC7EB2780732700B662C7 /* Products */,
-				438DC7F42780734E00B662C7 /* Frameworks */,
+				438DCB142786EACE00B662C7 /* C++ OpenGL Coordinate Systems Exercise 1 */,
+				438DCB132786EACE00B662C7 /* Products */,
+				438DCB1C2786EAD400B662C7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		438DC7EB2780732700B662C7 /* Products */ = {
+		438DCB132786EACE00B662C7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				438DC7EA2780732700B662C7 /* C++ OpenGL Hello Triangle */,
+				438DCB122786EACE00B662C7 /* C++ OpenGL Coordinate Systems Exercise 1 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		438DC7EC2780732700B662C7 /* C++ OpenGL Hello Triangle */ = {
+		438DCB142786EACE00B662C7 /* C++ OpenGL Coordinate Systems Exercise 1 */ = {
 			isa = PBXGroup;
 			children = (
-				438DC7ED2780732700B662C7 /* 하지만 */,
-				438DC7FB2780739900B662C7 /* glad.c */,
+				438DCB152786EACE00B662C7 /* main.cpp */,
+				438DCB282786EB5800B662C7 /* awesomeface.png */,
+				438DCB252786EB5700B662C7 /* container.jpg */,
+				438DCB272786EB5700B662C7 /* glad.c */,
+				438DCB262786EB5700B662C7 /* shader.fs */,
+				438DCB242786EB5700B662C7 /* Shader.h */,
+				438DCB232786EB5700B662C7 /* shader.vs */,
+				438DCB292786EB5800B662C7 /* stb_image.h */,
 			);
-			path = "C++ OpenGL Hello Triangle";
+			path = "C++ OpenGL Coordinate Systems Exercise 1";
 			sourceTree = "<group>";
 		};
-		438DC7F42780734E00B662C7 /* Frameworks */ = {
+		438DCB1C2786EAD400B662C7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				438DC7F72780735D00B662C7 /* libglfw.3.3.dylib */,
-				438DC7F52780734E00B662C7 /* OpenGL.framework */,
+				438DCB1F2786EAE300B662C7 /* libglfw.3.3.dylib */,
+				438DCB1D2786EAD400B662C7 /* OpenGL.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -96,39 +108,39 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		438DC7E92780732700B662C7 /* C++ OpenGL Hello Triangle */ = {
+		438DCB112786EACE00B662C7 /* C++ OpenGL Coordinate Systems Exercise 1 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 438DC7F12780732700B662C7 /* Build configuration list for PBXNativeTarget "C++ OpenGL Hello Triangle" */;
+			buildConfigurationList = 438DCB192786EACE00B662C7 /* Build configuration list for PBXNativeTarget "C++ OpenGL Coordinate Systems Exercise 1" */;
 			buildPhases = (
-				438DC7E62780732700B662C7 /* Sources */,
-				438DC7E72780732700B662C7 /* Frameworks */,
-				438DC7E82780732700B662C7 /* CopyFiles */,
-				438DC7FA2780735D00B662C7 /* Embed Libraries */,
+				438DCB0E2786EACE00B662C7 /* Sources */,
+				438DCB0F2786EACE00B662C7 /* Frameworks */,
+				438DCB102786EACE00B662C7 /* CopyFiles */,
+				438DCB222786EAE400B662C7 /* Embed Libraries */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "C++ OpenGL Hello Triangle";
-			productName = "C++ OpenGL Hello Triangle";
-			productReference = 438DC7EA2780732700B662C7 /* C++ OpenGL Hello Triangle */;
+			name = "C++ OpenGL Coordinate Systems Exercise 1";
+			productName = "C++ OpenGL Coordinate Systems Exercise 1";
+			productReference = 438DCB122786EACE00B662C7 /* C++ OpenGL Coordinate Systems Exercise 1 */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		438DC7E22780732700B662C7 /* Project object */ = {
+		438DCB0A2786EACD00B662C7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastUpgradeCheck = 1320;
 				TargetAttributes = {
-					438DC7E92780732700B662C7 = {
+					438DCB112786EACE00B662C7 = {
 						CreatedOnToolsVersion = 13.2.1;
 					};
 				};
 			};
-			buildConfigurationList = 438DC7E52780732700B662C7 /* Build configuration list for PBXProject "C++ OpenGL Hello Triangle" */;
+			buildConfigurationList = 438DCB0D2786EACD00B662C7 /* Build configuration list for PBXProject "C++ OpenGL Coordinate Systems Exercise 1" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -136,30 +148,30 @@
 				en,
 				Base,
 			);
-			mainGroup = 438DC7E12780732700B662C7;
-			productRefGroup = 438DC7EB2780732700B662C7 /* Products */;
+			mainGroup = 438DCB092786EACD00B662C7;
+			productRefGroup = 438DCB132786EACE00B662C7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				438DC7E92780732700B662C7 /* C++ OpenGL Hello Triangle */,
+				438DCB112786EACE00B662C7 /* C++ OpenGL Coordinate Systems Exercise 1 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		438DC7E62780732700B662C7 /* Sources */ = {
+		438DCB0E2786EACE00B662C7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				438DC7EE2780732700B662C7 /* 하지만 in Sources */,
-				438DC7FC2780739900B662C7 /* glad.c in Sources */,
+				438DCB162786EACE00B662C7 /* main.cpp in Sources */,
+				438DCB2A2786EB5800B662C7 /* glad.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		438DC7EF2780732700B662C7 /* Debug */ = {
+		438DCB172786EACE00B662C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -218,7 +230,7 @@
 			};
 			name = Debug;
 		};
-		438DC7F02780732700B662C7 /* Release */ = {
+		438DCB182786EACE00B662C7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -270,41 +282,35 @@
 			};
 			name = Release;
 		};
-		438DC7F22780732700B662C7 /* Debug */ = {
+		438DCB1A2786EACE00B662C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				HEADER_SEARCH_PATHS = (
 					/usr/local/Cellar/glfw/3.3.6/include,
 					/usr/local/Cellar/glad/include,
+					/usr/local/Cellar/glm/0.9.9.8/include,
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					/usr/local/Cellar/glfw/3.3.6/lib,
-				);
-				OTHER_LDFLAGS = (
-					"-framework",
-					OpenGL,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		438DC7F32780732700B662C7 /* Release */ = {
+		438DCB1B2786EACE00B662C7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				HEADER_SEARCH_PATHS = (
 					/usr/local/Cellar/glfw/3.3.6/include,
 					/usr/local/Cellar/glad/include,
+					/usr/local/Cellar/glm/0.9.9.8/include,
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					/usr/local/Cellar/glfw/3.3.6/lib,
-				);
-				OTHER_LDFLAGS = (
-					"-framework",
-					OpenGL,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -313,25 +319,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		438DC7E52780732700B662C7 /* Build configuration list for PBXProject "C++ OpenGL Hello Triangle" */ = {
+		438DCB0D2786EACD00B662C7 /* Build configuration list for PBXProject "C++ OpenGL Coordinate Systems Exercise 1" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				438DC7EF2780732700B662C7 /* Debug */,
-				438DC7F02780732700B662C7 /* Release */,
+				438DCB172786EACE00B662C7 /* Debug */,
+				438DCB182786EACE00B662C7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		438DC7F12780732700B662C7 /* Build configuration list for PBXNativeTarget "C++ OpenGL Hello Triangle" */ = {
+		438DCB192786EACE00B662C7 /* Build configuration list for PBXNativeTarget "C++ OpenGL Coordinate Systems Exercise 1" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				438DC7F22780732700B662C7 /* Debug */,
-				438DC7F32780732700B662C7 /* Release */,
+				438DCB1A2786EACE00B662C7 /* Debug */,
+				438DCB1B2786EACE00B662C7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 438DC7E22780732700B662C7 /* Project object */;
+	rootObject = 438DCB0A2786EACD00B662C7 /* Project object */;
 }
