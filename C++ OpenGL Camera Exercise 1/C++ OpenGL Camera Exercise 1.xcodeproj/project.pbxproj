@@ -7,15 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		438DCB7C2787204C00B662C7 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 438DCB7B2787204C00B662C7 /* main.cpp */; };
-		438DCB842787205300B662C7 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 438DCB832787205300B662C7 /* OpenGL.framework */; platformFilter = maccatalyst; };
-		438DCB862787205F00B662C7 /* libglfw.3.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 438DCB852787205F00B662C7 /* libglfw.3.3.dylib */; };
-		438DCB872787205F00B662C7 /* libglfw.3.3.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 438DCB852787205F00B662C7 /* libglfw.3.3.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		438DCB90278720C300B662C7 /* glad.c in Sources */ = {isa = PBXBuildFile; fileRef = 438DCB89278720C100B662C7 /* glad.c */; };
+		438DCBA02788067900B662C7 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 438DCB9F2788067900B662C7 /* main.cpp */; };
+		438DCBA82788068000B662C7 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 438DCBA72788068000B662C7 /* OpenGL.framework */; platformFilter = maccatalyst; };
+		438DCBAA2788068D00B662C7 /* libglfw.3.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 438DCBA92788068D00B662C7 /* libglfw.3.3.dylib */; };
+		438DCBAB2788068D00B662C7 /* libglfw.3.3.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 438DCBA92788068D00B662C7 /* libglfw.3.3.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		438DCBB6278806E300B662C7 /* glad.c in Sources */ = {isa = PBXBuildFile; fileRef = 438DCBB3278806E200B662C7 /* glad.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		438DCB762787204C00B662C7 /* CopyFiles */ = {
+		438DCB9A2788067900B662C7 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -24,13 +24,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
-		438DCB882787205F00B662C7 /* Embed Libraries */ = {
+		438DCBAC2788068D00B662C7 /* Embed Libraries */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				438DCB872787205F00B662C7 /* libglfw.3.3.dylib in Embed Libraries */,
+				438DCBAB2788068D00B662C7 /* libglfw.3.3.dylib in Embed Libraries */,
 			);
 			name = "Embed Libraries";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -38,73 +38,73 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		438DCB782787204C00B662C7 /* C++ OpenGL Camera Mouse */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "C++ OpenGL Camera Mouse"; sourceTree = BUILT_PRODUCTS_DIR; };
-		438DCB7B2787204C00B662C7 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		438DCB832787205300B662C7 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
-		438DCB852787205F00B662C7 /* libglfw.3.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.3.dylib; path = ../../../../../../usr/local/Cellar/glfw/3.3.6/lib/libglfw.3.3.dylib; sourceTree = "<group>"; };
-		438DCB89278720C100B662C7 /* glad.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = glad.c; sourceTree = "<group>"; };
-		438DCB8A278720C200B662C7 /* Shader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Shader.h; sourceTree = "<group>"; };
-		438DCB8B278720C200B662C7 /* container.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = container.jpg; sourceTree = "<group>"; };
-		438DCB8C278720C200B662C7 /* stb_image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stb_image.h; sourceTree = "<group>"; };
-		438DCB8D278720C200B662C7 /* shader.vs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = shader.vs; sourceTree = "<group>"; };
-		438DCB8E278720C200B662C7 /* awesomeface.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = awesomeface.png; sourceTree = "<group>"; };
-		438DCB8F278720C200B662C7 /* shader.fs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = shader.fs; sourceTree = "<group>"; };
-		438DCB912787F40C00B662C7 /* camera.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = camera.h; sourceTree = "<group>"; };
-		438DCB92278805F500B662C7 /* common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
+		438DCB9C2788067900B662C7 /* C++ OpenGL Camera Exercise 1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "C++ OpenGL Camera Exercise 1"; sourceTree = BUILT_PRODUCTS_DIR; };
+		438DCB9F2788067900B662C7 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		438DCBA72788068000B662C7 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		438DCBA92788068D00B662C7 /* libglfw.3.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.3.dylib; path = ../../../../../../usr/local/Cellar/glfw/3.3.6/lib/libglfw.3.3.dylib; sourceTree = "<group>"; };
+		438DCBAD278806E000B662C7 /* container.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = container.jpg; sourceTree = "<group>"; };
+		438DCBAE278806E000B662C7 /* shader.fs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = shader.fs; sourceTree = "<group>"; };
+		438DCBAF278806E100B662C7 /* shader.vs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = shader.vs; sourceTree = "<group>"; };
+		438DCBB0278806E100B662C7 /* camera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = camera.h; sourceTree = "<group>"; };
+		438DCBB1278806E100B662C7 /* awesomeface.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = awesomeface.png; sourceTree = "<group>"; };
+		438DCBB2278806E100B662C7 /* common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
+		438DCBB3278806E200B662C7 /* glad.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = glad.c; sourceTree = "<group>"; };
+		438DCBB4278806E200B662C7 /* Shader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Shader.h; sourceTree = "<group>"; };
+		438DCBB5278806E200B662C7 /* stb_image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stb_image.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		438DCB752787204C00B662C7 /* Frameworks */ = {
+		438DCB992788067900B662C7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				438DCB862787205F00B662C7 /* libglfw.3.3.dylib in Frameworks */,
-				438DCB842787205300B662C7 /* OpenGL.framework in Frameworks */,
+				438DCBAA2788068D00B662C7 /* libglfw.3.3.dylib in Frameworks */,
+				438DCBA82788068000B662C7 /* OpenGL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		438DCB6F2787204C00B662C7 = {
+		438DCB932788067900B662C7 = {
 			isa = PBXGroup;
 			children = (
-				438DCB7A2787204C00B662C7 /* C++ OpenGL Camera Mouse */,
-				438DCB792787204C00B662C7 /* Products */,
-				438DCB822787205200B662C7 /* Frameworks */,
+				438DCB9E2788067900B662C7 /* C++ OpenGL Camera Exercise 1 */,
+				438DCB9D2788067900B662C7 /* Products */,
+				438DCBA62788067F00B662C7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		438DCB792787204C00B662C7 /* Products */ = {
+		438DCB9D2788067900B662C7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				438DCB782787204C00B662C7 /* C++ OpenGL Camera Mouse */,
+				438DCB9C2788067900B662C7 /* C++ OpenGL Camera Exercise 1 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		438DCB7A2787204C00B662C7 /* C++ OpenGL Camera Mouse */ = {
+		438DCB9E2788067900B662C7 /* C++ OpenGL Camera Exercise 1 */ = {
 			isa = PBXGroup;
 			children = (
-				438DCB7B2787204C00B662C7 /* main.cpp */,
-				438DCB8E278720C200B662C7 /* awesomeface.png */,
-				438DCB8B278720C200B662C7 /* container.jpg */,
-				438DCB89278720C100B662C7 /* glad.c */,
-				438DCB8F278720C200B662C7 /* shader.fs */,
-				438DCB8A278720C200B662C7 /* Shader.h */,
-				438DCB8D278720C200B662C7 /* shader.vs */,
-				438DCB8C278720C200B662C7 /* stb_image.h */,
-				438DCB912787F40C00B662C7 /* camera.h */,
-				438DCB92278805F500B662C7 /* common.h */,
+				438DCB9F2788067900B662C7 /* main.cpp */,
+				438DCBB1278806E100B662C7 /* awesomeface.png */,
+				438DCBB0278806E100B662C7 /* camera.h */,
+				438DCBB2278806E100B662C7 /* common.h */,
+				438DCBAD278806E000B662C7 /* container.jpg */,
+				438DCBB3278806E200B662C7 /* glad.c */,
+				438DCBAE278806E000B662C7 /* shader.fs */,
+				438DCBB4278806E200B662C7 /* Shader.h */,
+				438DCBAF278806E100B662C7 /* shader.vs */,
+				438DCBB5278806E200B662C7 /* stb_image.h */,
 			);
-			path = "C++ OpenGL Camera Mouse";
+			path = "C++ OpenGL Camera Exercise 1";
 			sourceTree = "<group>";
 		};
-		438DCB822787205200B662C7 /* Frameworks */ = {
+		438DCBA62788067F00B662C7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				438DCB852787205F00B662C7 /* libglfw.3.3.dylib */,
-				438DCB832787205300B662C7 /* OpenGL.framework */,
+				438DCBA92788068D00B662C7 /* libglfw.3.3.dylib */,
+				438DCBA72788068000B662C7 /* OpenGL.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -112,39 +112,39 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		438DCB772787204C00B662C7 /* C++ OpenGL Camera Mouse */ = {
+		438DCB9B2788067900B662C7 /* C++ OpenGL Camera Exercise 1 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 438DCB7F2787204C00B662C7 /* Build configuration list for PBXNativeTarget "C++ OpenGL Camera Mouse" */;
+			buildConfigurationList = 438DCBA32788067900B662C7 /* Build configuration list for PBXNativeTarget "C++ OpenGL Camera Exercise 1" */;
 			buildPhases = (
-				438DCB742787204C00B662C7 /* Sources */,
-				438DCB752787204C00B662C7 /* Frameworks */,
-				438DCB762787204C00B662C7 /* CopyFiles */,
-				438DCB882787205F00B662C7 /* Embed Libraries */,
+				438DCB982788067900B662C7 /* Sources */,
+				438DCB992788067900B662C7 /* Frameworks */,
+				438DCB9A2788067900B662C7 /* CopyFiles */,
+				438DCBAC2788068D00B662C7 /* Embed Libraries */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "C++ OpenGL Camera Mouse";
-			productName = "C++ OpenGL Camera Mouse";
-			productReference = 438DCB782787204C00B662C7 /* C++ OpenGL Camera Mouse */;
+			name = "C++ OpenGL Camera Exercise 1";
+			productName = "C++ OpenGL Camera Exercise 1";
+			productReference = 438DCB9C2788067900B662C7 /* C++ OpenGL Camera Exercise 1 */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		438DCB702787204C00B662C7 /* Project object */ = {
+		438DCB942788067900B662C7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastUpgradeCheck = 1320;
 				TargetAttributes = {
-					438DCB772787204C00B662C7 = {
+					438DCB9B2788067900B662C7 = {
 						CreatedOnToolsVersion = 13.2.1;
 					};
 				};
 			};
-			buildConfigurationList = 438DCB732787204C00B662C7 /* Build configuration list for PBXProject "C++ OpenGL Camera Mouse" */;
+			buildConfigurationList = 438DCB972788067900B662C7 /* Build configuration list for PBXProject "C++ OpenGL Camera Exercise 1" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -152,30 +152,30 @@
 				en,
 				Base,
 			);
-			mainGroup = 438DCB6F2787204C00B662C7;
-			productRefGroup = 438DCB792787204C00B662C7 /* Products */;
+			mainGroup = 438DCB932788067900B662C7;
+			productRefGroup = 438DCB9D2788067900B662C7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				438DCB772787204C00B662C7 /* C++ OpenGL Camera Mouse */,
+				438DCB9B2788067900B662C7 /* C++ OpenGL Camera Exercise 1 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		438DCB742787204C00B662C7 /* Sources */ = {
+		438DCB982788067900B662C7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				438DCB7C2787204C00B662C7 /* main.cpp in Sources */,
-				438DCB90278720C300B662C7 /* glad.c in Sources */,
+				438DCBA02788067900B662C7 /* main.cpp in Sources */,
+				438DCBB6278806E300B662C7 /* glad.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		438DCB7D2787204C00B662C7 /* Debug */ = {
+		438DCBA12788067900B662C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -234,7 +234,7 @@
 			};
 			name = Debug;
 		};
-		438DCB7E2787204C00B662C7 /* Release */ = {
+		438DCBA22788067900B662C7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -286,7 +286,7 @@
 			};
 			name = Release;
 		};
-		438DCB802787204C00B662C7 /* Debug */ = {
+		438DCBA42788067900B662C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -303,7 +303,7 @@
 			};
 			name = Debug;
 		};
-		438DCB812787204C00B662C7 /* Release */ = {
+		438DCBA52788067900B662C7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -323,25 +323,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		438DCB732787204C00B662C7 /* Build configuration list for PBXProject "C++ OpenGL Camera Mouse" */ = {
+		438DCB972788067900B662C7 /* Build configuration list for PBXProject "C++ OpenGL Camera Exercise 1" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				438DCB7D2787204C00B662C7 /* Debug */,
-				438DCB7E2787204C00B662C7 /* Release */,
+				438DCBA12788067900B662C7 /* Debug */,
+				438DCBA22788067900B662C7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		438DCB7F2787204C00B662C7 /* Build configuration list for PBXNativeTarget "C++ OpenGL Camera Mouse" */ = {
+		438DCBA32788067900B662C7 /* Build configuration list for PBXNativeTarget "C++ OpenGL Camera Exercise 1" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				438DCB802787204C00B662C7 /* Debug */,
-				438DCB812787204C00B662C7 /* Release */,
+				438DCBA42788067900B662C7 /* Debug */,
+				438DCBA52788067900B662C7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 438DCB702787204C00B662C7 /* Project object */;
+	rootObject = 438DCB942788067900B662C7 /* Project object */;
 }

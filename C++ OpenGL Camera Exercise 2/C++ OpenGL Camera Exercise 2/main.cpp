@@ -11,75 +11,88 @@ void framebuffer_size_callback(GLFWwindow* window, int width, int height);
 void processInput(GLFWwindow* window);
 void mouse_callback(GLFWwindow* window, double xpos, double ypos);
 void scroll_callback(GLFWwindow* window, double xoffset, double yoffset);
+glm::mat4 calculate_lookAt_matrix(glm::vec3 position, glm::vec3 target, glm::vec3 worldUp);
 
-glm::vec3 cameraPos   = glm::vec3(0.0f, 0.0f, 3.0f);
-glm::vec3 cameraFront = glm::vec3(0.0f, 0.0f, -1.0f);
-glm::vec3 cameraUp    = glm::vec3(0.0f, 1.0f, 0.0f);
+Camera camera(glm::vec3(0.0f, 0.0f, 3.0f));
 
 float deltaTime = 0.0f;
 float lastFrame = 0.0f;
 
-float yaw = -90.0f;
-float pitch = 0.0f;
-
 float lastX = 400.0f;
 float lastY = 300.0f;
 
-float Zoom = 45.0f;
-float fov = 45.0f;
+bool firstMouse = true;
 
 void framebuffer_size_callback(GLFWwindow* window, int width, int height) {
   glViewport(0, 0, width, height);
 }
 
 void processInput(GLFWwindow* window) {
-  const float cameraSpeed = 2.5f * deltaTime;
   if (glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS) {
     glfwSetWindowShouldClose(window, true);
-  } else if (glfwGetKey(window, GLFW_KEY_W) == GLFW_PRESS) {
-    cameraPos += cameraSpeed * cameraFront;
-  } else if (glfwGetKey(window, GLFW_KEY_S) == GLFW_PRESS) {
-    cameraPos -= cameraSpeed * cameraFront;
-  } else if (glfwGetKey(window, GLFW_KEY_A) == GLFW_PRESS) {
-    cameraPos -= glm::normalize(glm::cross(cameraFront, cameraUp)) * cameraSpeed;
-  } else if (glfwGetKey(window, GLFW_KEY_D) == GLFW_PRESS) {
-    cameraPos += glm::normalize(glm::cross(cameraFront, cameraUp)) * cameraSpeed;
+  }
+  
+  if (glfwGetKey(window, GLFW_KEY_W) == GLFW_PRESS) {
+    camera.ProcessKeyboard(FORWARD, deltaTime);
+  }
+  
+  if (glfwGetKey(window, GLFW_KEY_S) == GLFW_PRESS) {
+    camera.ProcessKeyboard(BACKWARD, deltaTime);
+  }
+  
+  if (glfwGetKey(window, GLFW_KEY_A) == GLFW_PRESS) {
+    camera.ProcessKeyboard(LEFT, deltaTime);
+  }
+  
+  if (glfwGetKey(window, GLFW_KEY_D) == GLFW_PRESS) {
+    camera.ProcessKeyboard(RIGHT, deltaTime);
   }
 }
 
 void mouse_callback(GLFWwindow* window, double xpos, double ypos) {
+  if (firstMouse) {
+    lastX = xpos;
+    lastY = ypos;
+    firstMouse = false;
+  }
+  
   float xoffset = xpos - lastX;
   float yoffset = lastY - ypos;
+  
   lastX = xpos;
   lastY = ypos;
   
-  const float sensitivity = 0.1f;
-  xoffset *= sensitivity;
-  yoffset *= sensitivity;
-  
-  yaw += xoffset;
-  pitch += yoffset;
-  
-  if (pitch > 89.0f) {
-    pitch = 89.0f;
-  } else if (pitch < -89.0f) {
-    pitch = -89.0f;
-  }
-  
-  glm::vec3 direction;
-  direction.x = cos(glm::radians(yaw)) * cos(glm::radians(pitch));
-  direction.y = sin(glm::radians(pitch));
-  direction.z = sin(glm::radians(yaw)) * cos(glm::radians(pitch));
-  cameraFront = glm::normalize(direction);
+  camera.ProcessMouseMovement(xoffset, yoffset);
 }
 
 void scroll_callback(GLFWwindow* window, double xoffset, double yoffset) {
-  Zoom -= static_cast<float>(yoffset);
-  if (Zoom < 1.0f) {
-    Zoom = 1.0f;
-  } else if (Zoom > 45.0f) {
-    Zoom = 45.0f;
-  }
+  camera.ProcessMouseScroll(yoffset);
+}
+
+glm::mat4 calculate_lookAt_matrix(glm::vec3 position, glm::vec3 target, glm::vec3 worldUp) {
+  glm::vec3 zaxis = glm::normalize(position - target);
+  glm::vec3 xaxis = glm::normalize(glm::cross(glm::normalize(worldUp), zaxis));
+  glm::vec3 yaxis = glm::cross(zaxis, xaxis);
+  
+  glm::mat4 translation = glm::mat4(1.0f);
+  translation[3][0] = -position.x;
+  translation[3][1] = -position.y;
+  translation[3][2] = -position.z;
+  
+  glm::mat4 rotation = glm::mat4(1.0f);
+  rotation[0][0] = xaxis.x;
+  rotation[1][0] = xaxis.y;
+  rotation[2][0] = xaxis.z;
+  
+  rotation[0][1] = yaxis.x;
+  rotation[1][1] = yaxis.y;
+  rotation[2][1] = yaxis.z;
+  
+  rotation[0][2] = zaxis.x;
+  rotation[1][2] = zaxis.y;
+  rotation[2][2] = zaxis.z;
+  
+  return rotation * translation;
 }
 
 int main(int argc, const char* argv[]) {
@@ -260,10 +273,9 @@ int main(int argc, const char* argv[]) {
     
     ourShader.use();
     
-    glm::mat4 view = glm::lookAt(cameraPos, cameraPos + cameraFront, cameraUp);
-    ourShader.setMat4("view", view);
+    ourShader.setMat4("view", calculate_lookAt_matrix(camera.getPosition(), camera.getFront(), camera.getWorldUp()));
     
-    glm::mat4 projection = glm::perspective((glm::radians(fov)), 800.0f / 600.0f, 0.1f, 100.0f);
+    glm::mat4 projection = glm::perspective((glm::radians(camera.getZoom())), 800.0f / 600.0f, 0.1f, 100.0f);
     ourShader.setMat4("projection", projection);
     
     
