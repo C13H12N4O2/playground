@@ -3,9 +3,6 @@
 #include "mesh.hpp"
 #include "model.hpp"
 
-#include <thread>
-#include <chrono>
-
 void framebuffer_size_callback(GLFWwindow* window, int width, int height);
 void mouse_callback(GLFWwindow* window, double xpos, double ypos);
 void scroll_callback(GLFWwindow* window, double xoffset, double yoffset);
@@ -51,8 +48,8 @@ int main(int argc, const char* argv[]) {
   
   glEnable(GL_DEPTH_TEST);
   
-  const char* path = "backpack.obj";
-  Model model(path);
+  const char* path = "./backpack.obj";
+  Model ourModel(path);
   Shader backpackShader("backpack_shader.vs", "backpack_shader.fs");
   
   while (!glfwWindowShouldClose(window)) {
@@ -65,12 +62,24 @@ int main(int argc, const char* argv[]) {
     glClearColor(0.1f, 0.1f, 0.1f, 1.0f);
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
     
-    model.Draw(backpackShader);
+    backpackShader.use();
+
+    // view/projection transformations
+    glm::mat4 projection = glm::perspective(glm::radians(camera.getZoom()), (float)WIDTH / (float)HEIGHT, 0.1f, 100.0f);
+    glm::mat4 view = camera.GetViewMatrix();
+    backpackShader.setMat4("projection", projection);
+    backpackShader.setMat4("view", view);
+
+    // render the loaded model
+    glm::mat4 model = glm::mat4(1.0f);
+    model = glm::translate(model, glm::vec3(0.0f, 0.0f, 0.0f)); // translate it down so it's at the center of the scene
+    model = glm::scale(model, glm::vec3(1.0f, 1.0f, 1.0f));  // it's a bit too big for our scene, so scale it down
+    backpackShader.setMat4("model", model);
+    
+    ourModel.Draw(backpackShader);
     
     glfwSwapBuffers(window);
     glfwPollEvents();
-    
-    std::this_thread::sleep_for(std::chrono::milliseconds(50000));
   }
   
   glfwTerminate();
