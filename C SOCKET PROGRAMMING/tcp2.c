@@ -27,32 +27,31 @@ typedef struct
 } Packet;
 
 const char *sStr[] = { "Apple",  "LG",      "Telsa",  "Discord", "Google", 
-                               "Amazon", "Twitter", "SpaceX", "Samsung", "Hyundai", };
+                       "Amazon", "Twitter", "SpaceX", "Samsung", "Hyundai", };
+struct pollfd        tPollFds[CNT_POLL];
+int                  nSockFd, nAcptSockFd;
+int                  nRtn;
 
 int main();
 int fn_ListenTCPSocket();
-int fn_Poll(struct pollfd *, int *);
-int fn_SendPacket(struct pollfd *, int *);
+int fn_Accept();
+int fn_SendPacket();
+
+void sigpipe_handler(int signum) {
+    int i;
+    for (i = 3; i != 10; ++i)
+        close(i);
+}
 
 int main()
-{
-    struct pollfd       tPollFds[CNT_POLL];
-    int                 nSockFd;
-    int                 nRtn;
-    int                 nIdx;
-                                   
+{      
     nSockFd = fn_ListenTCPSocket();
     
     srand(time(NULL));
     
-    signal(SIGPIPE, SIG_IGN);
+    signal(SIGPIPE, sigpipe_handler);
     
-    tPollFds[0].fd      = nSockFd;
-    tPollFds[0].events  = POLLIN;
-    
-    nRtn = fn_Poll(tPollFds, &nSockFd);
-    
-    close(nSockFd);
+    nRtn = fn_Accept();
     
     return 0;
 }
@@ -79,52 +78,30 @@ int fn_ListenTCPSocket()
     return (nSockFd);
 }
 
-int fn_Poll(struct pollfd *tPollFds, int *nSockFd)
+int fn_Accept()
 {
     struct sockaddr_in  tAcptAddr;
     socklen_t           nAddrLen = sizeof(tAcptAddr);
-    int                 nAcptSockFd;
-    int                 nRtn;
     
     while (1)
     {
-        nRtn = poll(tPollFds, CNT_POLL, TIMEOUT);
-        
-        if      (nRtn == RTN_ERROR)     break;
-        else if (nRtn == RTN_TIMEOUT)   printf("TIMEOUT\n");
-        else
-        {
-            memset((struct sockaddr *) &tAcptAddr, 0x00, sizeof(tAcptAddr));
-    
-            if (tPollFds[0].revents & POLLHUP)
-            {
-                tPollFds[0].revents = 0;
-                break;
-            }
-            else if (tPollFds[0].revents & POLLIN)
-            {
-                tPollFds[0].revents = 0;
-                
-                if ((nAcptSockFd = accept(*nSockFd, (struct sockaddr *) &tAcptAddr, &nAddrLen)) == RTN_ERROR)
-                    break;
-                    
-                tPollFds[1].fd      = nAcptSockFd;
-                tPollFds[1].events  = POLLIN;
-                    
-                fn_SendPacket(tPollFds, &nAcptSockFd);
-            }
-        }
+        if ((nAcptSockFd = accept(nSockFd, (struct sockaddr *) &tAcptAddr, &nAddrLen)) == RTN_ERROR)
+            break;
+            
+        tPollFds[0].fd      = nAcptSockFd;
+        tPollFds[0].events  = POLLOUT;
+            
+        fn_SendPacket();
     }
     
     return RTN_ERROR;
 }
 
-int fn_SendPacket(struct pollfd *tPollFds, int *nSockFd)
+int fn_SendPacket()
 {
-    Packet              tPacket;
-    int                 iIdx;
-    int                 nRtn;
-    
+    Packet  tPacket;
+    int     iIdx;
+       
     while (1)
     {
         nRtn = poll(tPollFds, CNT_POLL, TIMEOUT);
@@ -138,11 +115,6 @@ int fn_SendPacket(struct pollfd *tPollFds, int *nSockFd)
                 tPollFds[0].revents = 0;
                 return RTN_ERROR;
             }
-            else if (tPollFds[1].revents & POLLHUP)
-            {
-                tPollFds[0].revents = 0;
-                return RTN_ERROR;
-            }
             
             tPollFds[1].revents = 0;
         
@@ -151,7 +123,7 @@ int fn_SendPacket(struct pollfd *tPollFds, int *nSockFd)
             memset((Packet *) &tPacket, 0x00, sizeof(tPacket));
             strcpy(tPacket.sStr, sStr[iIdx]);
             
-            if (send(*nSockFd, &tPacket, sizeof(tPacket), 0) == -1)
+            if (send(nAcptSockFd, &tPacket, sizeof(tPacket), 0) == -1)
                 return RTN_ERROR;
                 
             printf("%s\n", tPacket.sStr);
