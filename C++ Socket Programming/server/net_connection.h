@@ -5,10 +5,9 @@
 #include "net_message.h"
 
 namespace net {
-template<typename T>
-class Connection {
+class Connection : public std::enable_shared_from_this<Connection> {
 public:
-    Connection(int sockfd, int kqueue, tsqueue<std::shared_ptr<char[]>>& message) : m_sockfd(sockfd), m_kqueue(kqueue), m_timeout(0),  m_message(message) {
+    Connection(int sockfd, int kqueue, tsqueue<std::shared_ptr<Message>>& message) : m_sockfd(sockfd), m_kqueue(kqueue), m_timeout(0),  m_message(message) {
         struct kevent event;
         EV_SET(&event, sockfd, EVFILT_READ, EV_ADD, 0, 0, nullptr);
         kevent(m_kqueue, &event, 1, nullptr, 0, nullptr);
@@ -51,29 +50,35 @@ public:
         return fcntl(m_sockfd, F_GETFD) != -1;
     }
     
-    void Send(const std::shared_ptr<char[]>& buffer) {
-        ::send(m_sockfd, buffer.get(), sizeof(net::Test1), 0);
+    void Send(const std::unique_ptr<char[]>& buffer) {
+        ::send(m_sockfd, buffer.get(), sizeof(Header), 0);
     }
     
 private:
     void Receive() {
-        auto buffer = std::make_unique<char[]>(128);
+        auto buffer = std::make_unique<char[]>(1024);
         std::memset(buffer.get(), 0x00, sizeof(buffer));
         
-        ssize_t bytesRead = ::recv(m_sockfd, buffer.get(), sizeof(Test1), 0);
+        ssize_t bytesRead = ::recv(m_sockfd, buffer.get(), sizeof(Header), 0);
         if (bytesRead <= 0) {
             std::cerr << "Client disconnected: " << m_sockfd << "\n";
             throw std::runtime_error("Client disconnected");
         }
         
-        m_message.emplace_back(std::move(buffer));
+        auto message = std::make_unique<Message>();
+        message->remote = shared_from_this();
+        std::memcpy(message->data.get(), buffer.get(), sizeof(Header));
         
+        std::cout << message->data << "[" << sizeof(Header) << "]\n";
+        
+        m_message.emplace_back(std::move(message));
+
         struct kevent event;
         EV_SET(&event, SERVER_MSG_EVENT_IDENT, EVFILT_USER, 0, NOTE_TRIGGER, 0, nullptr);
         if (kevent(m_kqueue, &event, 1, nullptr, 0, nullptr) < 0) {
             perror("Failed to trigger server message event");
         }
-        
+
         m_timeout = 0;
     }
     
@@ -112,6 +117,6 @@ private:
     int m_timeout;
     int m_sockfd;
     int m_kqueue;
-    tsqueue<std::shared_ptr<char[]>>& m_message;
+    tsqueue<std::shared_ptr<Message>>& m_message;
 };
 }

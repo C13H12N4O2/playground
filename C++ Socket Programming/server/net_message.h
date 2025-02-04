@@ -52,12 +52,9 @@ struct Header {
     char date[8];
 };
 
-template<typename T>
-class connection;
-
-template<typename T>
+class Connection;
 struct Message {
-    std::shared_ptr<connection<T>> remote = nullptr;
-    Header header;
+    std::shared_ptr<Connection> remote = nullptr;
+    std::unique_ptr<char[]> data = std::make_unique<char[]>(1024);
 };
 }

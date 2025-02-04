@@ -73,17 +73,12 @@ public:
                 if (events[i].ident == static_cast<uintptr_t>(m_sockfd)) {
                     AcceptClientConnection();
                 } else if (events[i].ident == SERVER_MSG_EVENT_IDENT) {
-                    auto conn = FindConnection(events[i].ident);
-                    if (conn == nullptr)
-                        continue;
-                    
-                    auto buffer = std::move(m_messages.pop_front());
-                    std::cout << buffer << "\n";
-                    auto packet = reinterpret_cast<Test1*>(buffer.get());
+                    auto message = std::move(m_messages.pop_front());
+                    auto packet = reinterpret_cast<Header*>(message->data.get());
                     
                     std::memcpy(packet->code, "0800210", sizeof(packet->code));
-                    
-                    conn->Send(buffer);
+
+                    message->remote->Send(message->data);
                 } else {
                     auto conn = FindConnection(events[i].ident);
                     if (conn == nullptr)
@@ -116,10 +111,10 @@ private:
         std::cout << "Client connected: " << sockfd << "\n";
         
         fcntl(sockfd, F_SETFL, O_NONBLOCK);
-        m_connections.emplace_back(std::make_unique<Connection<T>>(sockfd, m_kqueue, m_messages));
+        m_connections.emplace_back(std::make_shared<Connection>(sockfd, m_kqueue, m_messages));
     }
     
-    Connection<T>* FindConnection(uintptr_t sockfd) {
+    Connection* FindConnection(uintptr_t sockfd) {
         for (auto& conn : m_connections) {
             if (conn->GetSocketFd() == sockfd) {
                 return conn.get();
@@ -131,7 +126,7 @@ private:
     void RemoveConnection(int sockfd) {
         m_connections.erase(
             std::remove_if(m_connections.begin(), m_connections.end(),
-                           [sockfd](const std::unique_ptr<Connection<T>>& conn) {
+                           [sockfd](const std::shared_ptr<Connection>& conn) {
                                return conn->GetSocketFd() == sockfd;
                            }),
             m_connections.end());
@@ -157,7 +152,7 @@ private:
     uint16_t m_port;
     int      m_sockfd;
     int      m_kqueue;
-    tsqueue<std::shared_ptr<char[]>> m_messages;
-    std::vector<std::unique_ptr<Connection<T>>> m_connections;
+    tsqueue<std::shared_ptr<Message>> m_messages;
+    std::vector<std::shared_ptr<Connection>> m_connections;
 };
 }
